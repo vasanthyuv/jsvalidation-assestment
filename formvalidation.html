@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="validation.js"></script>
+    <form action="" method="post">
+        <fieldset>
+            <legend style="text-align: center;">
+            REGISTRATION FORM</legend>
+            <label>user name</label>
+            <input type="text" required placeholder="username" id="uname">
+            <br><br>
+
+            <label>date of birth</label>
+            <input type="date" required placeholder="dob" id="dob">
+            <br><br>
+
+            <label >gender</label>
+            <input type="radio" name="gender" value="Male" id="male">Male
+            <input type="radio" name="gender" value="Female" id="female">Female
+            <br><br>
+
+            <label>father name</label>
+            <input type="text" required placeholder="father name" id="fname">
+            <br><br>
+
+            <label>address</label>
+            <textarea rows="5" cols="50" id="addr"></textarea>
+            <br><br>
+
+            <label>phone number</label>
+            <input type="tel" pattern="[0-9]{2}-[0-9]{3}-[0-9]{6}" required placeholder="00-000-000000" id="pno">
+            <br><br>
+
+            <label>mobile no</label>
+            <input type="number" required placeholder="mobile number" id="mno">
+            <br><br>
+
+            <label>Email id</label>
+            <input type="email" required placeholder="gmail" id="mail">
+            <br><br>
+
+            <label>college name</label>
+            <input type="text" required placeholder="college name" id="cname">
+            <br><br>
+
+            <label>mark scored</label>
+            <input type="number" required placeholder="mark" id="mark">
+            <br><br>
+
+            <label>personal interest</label>
+            <input type="checkbox" name="interest" id="front-end">
+            <label for="front-end">front end developer</label>
+
+            <input type="checkbox" name="interest" id="back-end">
+            <label for="back-end">backend developer</label>
+
+            <input type="checkbox" name="interest" id="database">
+            <label for="database">database management</label>
+            <br><br>
+
+            <input type="button" onclick="validation()" value="submit">
+        </fieldset>
+    </form>
+
+</body>
+</html>
